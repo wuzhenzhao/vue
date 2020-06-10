@@ -1,0 +1,30 @@
+<template xmlns:v-on="http://www.w3.org/1999/xhtml">
+    <div id="app">
+<!--      <button  v-on:click="send">发送ajax请求</button>-->
+    </div>
+</template>
+<script>
+/* eslint-disable no-new */
+export default {
+  name: 'Index',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js Home'
+    }
+  },
+  methods: {
+    // send: function () {
+    //   this.$axios({
+    //     method: 'get',
+    //     url: '/api/wuzz/get.json?name=' + 'wuzz'
+    //   }).then(function (res) {
+    //     let data = res.data.success
+    //     alert(JSON.stringify(data))
+    //     console.log(res)
+    //   }).catch(function (err) {
+    //     alert(err)
+    //   })
+    // }
+  }
+}
+</script>
