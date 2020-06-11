@@ -5,8 +5,9 @@
       <div style="height: 300px;width: 300px;float: left">
         <h2>这是一个标题h2</h2>
         <h3>这是一个标题h3</h3>
-        <button v-on:click="tiaozhuan">页面跳转按钮</button>
-        <button v-on:click="tiaozhuanIndex">页面首页跳转按钮</button>
+        <button v-on:click="tiaozhuan">页面跳转按钮Ajax</button>
+        <button v-on:click="tiaozhuanIndex">页面首页跳转按钮Index</button>
+        <button v-on:click="tiaozhuanElement">页面跳转按钮Element</button>
         <img src="../images/head.jpg" width="100" height="100" />
         <a href="https://www.baidu.com">这是一个跳转链接</a>
       </div>
@@ -112,7 +113,10 @@ export default {
       this.$router.push('/home')
     },
     tiaozhuanIndex: function () {
-      this.$router.push('/index')
+      this.$router.push('/login')
+    },
+    tiaozhuanElement: function () {
+      this.$router.push('/myElement')
     },
     clickTest: function () {
       this.message = '22222222222'

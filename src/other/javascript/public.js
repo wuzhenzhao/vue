@@ -84,6 +84,7 @@ $(function () {
   $('.mask').click(function () {
     $(this).hide()
     $('.dialog').hide()
+    $('.dialog2').hide()
   })
   // 自动关闭消息窗口
   $('.Jmsg').click(function () {
@@ -107,5 +108,94 @@ $(function () {
     backFn: function (p) {
       console.log(p)
     }
+  })
+
+  // 带遮罩
+  $('.xzdh').click(function () {
+    $('.dialog2,.mask').show()
+    $('.dialog2').css('box-shadow', 'none')
+  })
+
+  $('#a1').click(function () {
+    // eslint-disable-next-line no-undef
+    layer.alert('内容')
+  })
+  $('#a2').click(function () {
+    // eslint-disable-next-line no-undef
+    layer.confirm('您是如何看待前端开发？', {
+      btn: ['重要', '奇葩'] // 按钮
+    }, function () {
+      // eslint-disable-next-line no-undef
+      layer.msg('的确很重要', {icon: 1})
+    }, function () {
+      // eslint-disable-next-line no-undef
+      layer.msg('也可以这样', {
+        time: 20000, // 20s后自动关闭
+        btn: ['明白了', '知道了']
+      })
+    })
+  })
+  $('#a3').click(function () {
+    // eslint-disable-next-line no-undef
+    layer.msg('玩命提示中')
+  })
+  $('#a4').click(function () {
+    // eslint-disable-next-line no-undef
+    layer.load(0, {shade: false}) // 0代表加载的风格，支持0-2
+    setTimeout(function () {
+      // eslint-disable-next-line no-undef
+      layer.closeAll('loading')
+    }, 2000)
+  })
+  $('#a5').click(function () {
+    // 小tips
+    // eslint-disable-next-line no-undef
+    layer.tips('我是另外一个tips，只不过我长得跟之前那位稍有些不一样。', '#a5', {
+      tips: [1, '#76d4f5'],
+      time: 4000
+    })
+  })
+  $('#a6').click(function () {
+    // tab层
+    // eslint-disable-next-line no-undef
+    layer.tab({
+      area: ['600px', '300px'],
+      tab: [{
+        title: 'TAB1',
+        content: '内容1'
+      }, {
+        title: 'TAB2',
+        content: '内容2'
+      }, {
+        title: 'TAB3',
+        content: '内容3'
+      }]
+    })
+  })
+  $('#a7').click(function () {
+    // eslint-disable-next-line no-undef
+    layer.open({
+      type: 2,
+      title: false,
+      closeBtn: 0, // 不显示关闭按钮
+      shade: [0],
+      area: ['340px', '215px'],
+      offset: 'rb', // 右下角弹出
+      time: 2000, // 2秒后自动关闭
+      anim: 2,
+      content: ['#', 'no'], // iframe的url，no代表不显示滚动条
+      end: function () { // 此处用于演示
+        // eslint-disable-next-line no-undef
+        layer.open({
+          type: 2,
+          title: '很多时候，我们想最大化看，比如像这个页面。',
+          shadeClose: true,
+          shade: false,
+          maxmin: true, // 开启最大化最小化按钮
+          area: ['893px', '600px'],
+          content: '#/'
+        })
+      }
+    })
   })
 })

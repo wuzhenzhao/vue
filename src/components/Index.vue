@@ -24,10 +24,10 @@
                     <i class="icon-columns"></i>页面基础布局<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a v-on:click="elasticBoxLayout">弹性盒子布局</a>
+                    <a href="#txhzbj">弹性盒子布局</a>
                   </dd>
                   <dd>
-                    <a href="flow-layout.html">瀑布流布局</a>
+                    <a href="#pblbj">瀑布流布局</a>
                   </dd>
                 </dl>
               </li>
@@ -37,7 +37,7 @@
                     <i class="icon-inbox"></i>按钮UI<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="button.html">基础按钮</a>
+                    <a href="#btnId">基础按钮</a>
                   </dd>
                 </dl>
               </li>
@@ -47,7 +47,7 @@
                     <i class="icon-table"></i>表格UI<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="table.html">基础表格</a>
+                    <a href="#table">基础表格</a>
                   </dd>
                 </dl>
               </li>
@@ -57,7 +57,7 @@
                     <i class="icon-list-alt"></i>表单UI<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="form.html">表单结构样式</a>
+                    <a href="#form">表单结构样式</a>
                   </dd>
                 </dl>
               </li>
@@ -67,7 +67,7 @@
                     <i class="icon-external-link"></i>弹出窗口<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="popups.html">基础弹出层</a>
+                    <a href="#tkxlzs">基础弹出层</a>
                   </dd>
                 </dl>
               </li>
@@ -77,7 +77,7 @@
                     <i class="icon-bar-chart"></i>百度统计echarts图表<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="echarts.html">echarts统计图表</a>
+                    <a >echarts统计图表</a>
                   </dd>
                 </dl>
               </li>
@@ -87,7 +87,7 @@
                     <i class="icon-font"></i>文本编辑器<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="ueditor.html">百度UEDITOR编辑器</a>
+                    <a >百度UEDITOR编辑器</a>
                   </dd>
                 </dl>
               </li>
@@ -97,7 +97,7 @@
                     <i class="icon-road"></i>进度条<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="progress.html">progress进度条兼容</a>
+                    <a href="#jdt">progress进度条兼容</a>
                   </dd>
                 </dl>
               </li>
@@ -107,7 +107,7 @@
                     <i class="icon-tags"></i>Tab选项卡<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="tab.html">Tab选项卡</a>
+                    <a href="#tab">Tab选项卡</a>
                   </dd>
                 </dl>
               </li>
@@ -117,7 +117,7 @@
                     <i class="icon-filter"></i>下拉菜单<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="button-dropdown.html">按钮式下拉菜单</a>
+                    <a >按钮式下拉菜单</a>
                   </dd>
                 </dl>
               </li>
@@ -127,17 +127,7 @@
                     <i class="icon-sitemap"></i>页面分组标题<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="title.html">页面标题</a>
-                  </dd>
-                </dl>
-              </li>
-              <li>
-                <dl>
-                  <dt>
-                    <i class="icon-columns"></i>分页<i class="icon-angle-right"></i>
-                  </dt>
-                  <dd>
-                    <a href="paging.html">jquery分页效果</a>
+                    <a href="#ymfzbt">页面标题</a>
                   </dd>
                 </dl>
               </li>
@@ -147,7 +137,7 @@
                     <i class="icon-spinner"></i>旋转动画<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="animation.html">刷新加载动画</a>
+                    <a href="#xzdh">刷新加载动画</a>
                   </dd>
                 </dl>
               </li>
@@ -157,7 +147,7 @@
                     <i class="icon-fighter-jet"></i>面包屑导航<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="breadcrumb.html">面包屑</a>
+                    <a href="#mbxdh">面包屑</a>
                   </dd>
                 </dl>
               </li>
@@ -167,7 +157,7 @@
                     <i class="icon-laptop"></i>文本面板<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="text-panel.html">文本面板</a>
+                    <a >文本面板</a>
                   </dd>
                 </dl>
               </li>
@@ -177,7 +167,7 @@
                     <i class="icon-leaf"></i>块引用<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="blockquote.html">块引用</a>
+                    <a >块引用</a>
                   </dd>
                 </dl>
               </li>
@@ -187,13 +177,13 @@
                     <i class="icon-star"></i>第三方弹窗组件<i class="icon-angle-right"></i>
                   </dt>
                   <dd>
-                    <a href="layer.html">web弹层组件</a>
+                    <a href="#webtcczj">web弹层组件</a>
                   </dd>
                 </dl>
               </li>
             </ul>
           </nav>
-          <footer class="side-footer">© DeathGhost 版权所有</footer>
+          <footer class="side-footer">@Wuzhenzhao 版权所有</footer>
         </div>
         <div class="content-wrap">
           <header class="top-hd">
@@ -222,7 +212,7 @@
           </header>
           <main class="main-cont content mCustomScrollbar">
             <!--开始::内容-->
-            <div class="page-wrap" v-if="pageWrap1">
+            <div class="page-wrap">
               <section class="page-hd">
                 <header>
                   <h2 class="title"><i class="icon-home"></i>模块化后台管理模板</h2>
@@ -346,8 +336,952 @@
                 </ul>
               </div>
             </div>
+            <div class="page-wrap" id="txhzbj">
+              <!--开始::内容-->
+              <section class="page-hd">
+                <header>
+                  <h2 class="title">弹性盒子布局</h2>
+                  <p class="title-description">
+                    flex容器有单行多行和反转排列，具体查看CSS3相关文件，该模板仅提供页面常用
+                    布局结构，<em class="text-primary">单行平均布局</em>与<em class="text-primary">多行5列</em>布局。
+                    弹性盒子本无样式，具体内容间隔，亲们根据内容容器进行设置<em class="text-primary">外边距(margin)</em>或
+                    <em class="text-primary">内边距(padding)</em>设置。
+                  </p>
+                </header>
+                <hr>
+              </section>
+              <blockquote class="blockquote mb-10">
+                CSS3弹性盒模型布局结构——<b>单行</b>样式
+              </blockquote>
+              <ul class="flex flex-nowrap">
+                <li class="box-child">
+                  <div class="panel panel-primary mr-10">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·单行样式
+                    </div>
+                  </div>
+                </li>
+                <li class="box-child">
+                  <div class="panel panel-secondary mr-10">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·单行样式
+                    </div>
+                  </div>
+                </li>
+                <li class="box-child">
+                  <div class="panel panel-primary">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·单行样式
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <blockquote class="blockquote mb-10">
+                CSS3弹性盒模型布局结构——<b>两列多行</b>样式
+              </blockquote>
+              <ul class="flex flex-wrap flex-col-2">
+                <li class="box-child">
+                  <div class="panel panel-primary mr-10">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·单行样式
+                    </div>
+                  </div>
+                </li>
+                <li class="box-child">
+                  <div class="panel panel-secondary">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·单行样式
+                    </div>
+                  </div>
+                </li>
+                <li class="box-child">
+                  <div class="panel panel-primary mr-10">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·两列多行样式
+                    </div>
+                  </div>
+                </li>
+                <li class="box-child">
+                  <div class="panel panel-primary">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·两列多行样式
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <blockquote class="blockquote mb-10">
+                CSS3弹性盒模型布局结构——<b>三列多行</b>样式
+              </blockquote>
+              <ul class="flex flex-wrap flex-col-3">
+                <li class="box-child">
+                  <div class="panel panel-primary mr-10">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·三列多行样式
+                    </div>
+                  </div>
+                </li>
+                <li class="box-child">
+                  <div class="panel panel-secondary mr-10">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·三列多行样式
+                    </div>
+                  </div>
+                </li>
+                <li class="box-child">
+                  <div class="panel panel-primary">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·三列多行样式
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <blockquote class="blockquote mb-10">
+                CSS3弹性盒模型布局结构——<b>四列多行</b>样式
+              </blockquote>
+              <ul class="flex flex-wrap flex-col-4">
+                <li class="box-child">
+                  <div class="panel panel-primary">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·四列多行样式
+                    </div>
+                  </div>
+                </li>
+                <li class="box-child">
+                  <div class="panel panel-secondary">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·四列多行样式
+                    </div>
+                  </div>
+                </li>
+                <li class="box-child">
+                  <div class="panel panel-primary">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·四列多行样式
+                    </div>
+                  </div>
+                </li>
+                <li class="box-child">
+                  <div class="panel panel-primary">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·四列多行样式
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <blockquote class="blockquote mb-10">
+                CSS3弹性盒模型布局结构——<b>五列多行</b>样式
+              </blockquote>
+              <ul class="flex flex-wrap flex-col-5">
+                <li class="box-child">
+                  <div class="panel panel-primary">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·五列多行样式
+                    </div>
+                  </div>
+                </li>
+                <li class="box-child">
+                  <div class="panel panel-secondary">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·五列多行样式
+                    </div>
+                  </div>
+                </li>
+                <li class="box-child">
+                  <div class="panel panel-primary">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·五列多行样式
+                    </div>
+                  </div>
+                </li>
+                <li class="box-child">
+                  <div class="panel panel-primary">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·五列多行样式
+                    </div>
+                  </div>
+                </li>
+                <li class="box-child">
+                  <div class="panel panel-primary">
+                    <div class="panel-hd">弹性盒子布局</div>
+                    <div class="panel-bd">
+                      弹性盒子布局·五列多行样式
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!--开始::结束-->
+            </div>
+            <div class="page-wrap" id="pblbj">
+              <!--开始::内容-->
+              <section class="page-hd">
+                <header>
+                  <h2 class="title">弹性盒子布局</h2>
+                  <p class="title-description">
+                    CSS3中column-count元素被划分的列数。具体查看相关文档。
+                    此模板内置最多5列，具体还是根据项目内容而定，同时注意小屏幕显示情况。
+                    相关值：flow-layout col-2/col-3/col-4/col-5
+                  </p>
+                </header>
+                <hr>
+              </section>
+              <div class="page-wrap">
+                <blockquote class="blockquote mb-20">
+                  CSS3中column-count元素被划分的列数。具体查看相关文档。
+                </blockquote>
+                <div class="flow-layout col-2">
+                  <ul>
+                    <li class="child-wrap">
+                      <div class="panel panel-default">
+                        <div class="panel-bd">
+                          面板内容
+                        </div>
+                      </div>
+                    </li>
+                    <li class="child-wrap">
+                      <div class="panel panel-default">
+                        <div class="panel-bd">
+                          面板内容
+                        </div>
+                      </div>
+                    </li>
+                    <li class="child-wrap">
+                      <div class="panel panel-default">
+                        <div class="panel-bd">
+                          面板内容面板内容面板内容面板内容面板内容面板内容面板内容
+                        </div>
+                      </div>
+                    </li>
+                    <li class="child-wrap">
+                      <div class="panel panel-default">
+                        <div class="panel-bd">
+                          面板内容面板内容面板内容面板内容面板内容面板内容
+                          面板内容面板内容面板内容面板内容面板内容面板内容面板内容
+                          面板内容面板内容面板内容面板内容面板内容面板内容
+                          面板内容面板内容面板内容面板内容面板内容面板内容面板内容
+                        </div>
+                      </div>
+                    </li>
+                    <li class="child-wrap">
+                      <div class="panel panel-default">
+                        <div class="panel-bd">
+                          面板内容
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--开始::结束-->
+            </div>
+            <div class="page-wrap" id="btnId">
+              <!--开始::内容-->
+              <section class="page-hd">
+                <header>
+                  <h2 class="title">按钮系列展示</h2>
+                  <p class="title-description">
+                    按钮系列，具体按钮选择根据页面结构布局色彩搭配
+                  </p>
+                </header>
+                <hr>
+              </section>
+              <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>基础按钮</th>
+                  <th>线性按钮</th>
+                  <th>圆角按钮</th>
+                  <th>按钮尺寸</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="cen">
+                  <td>
+                    <button class="btn btn-primary">基础按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-primary-outline">线性按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-primary radius">圆角按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-primary-outline radius size-s">按钮尺寸</button>
+                  </td>
+                </tr>
+                <tr class="cen">
+                  <td>
+                    <button class="btn btn-secondary">基础按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-secondary-outline">线性按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-secondary radius">圆角按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-secondary-outline radius size-m">按钮尺寸</button>
+                  </td>
+                </tr>
+                <tr class="cen">
+                  <td>
+                    <button class="btn btn-info">基础按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-info-outline">线性按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-info radius">圆角按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-info-outline radius size-l">按钮尺寸</button>
+                  </td>
+                </tr>
+                <tr class="cen">
+                  <td>
+                    <button class="btn btn-warning">基础按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-warning-outline">线性按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-warning radius">圆角按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-warning-outline radius size-l">按钮尺寸</button>
+                  </td>
+                </tr>
+                <tr class="cen">
+                  <td>
+                    <button class="btn btn-danger">基础按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger-outline">线性按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger radius">圆角按钮</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger-outline radius size-xl">按钮尺寸</button>
+                  </td>
+                </tr>
+                <tr class="cen">
+                  <td>
+                    <button class="btn btn-danger radius-rounded">椭圆形边角</button>
+                  </td>
+                  <td colspan="3">
+                    <button class="btn btn-danger-outline btn-block">100%通行按钮</button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+              <!--开始::结束-->
+              <div class="page-wrap" id="table">
+                <!--开始::内容-->
+                <section class="page-hd">
+                  <header>
+                    <h2 class="title">表格系列展示</h2>
+                    <p class="title-description">
+                      表格系列，四种表格样式，隔行换色，鼠标经过等
+                    </p>
+                  </header>
+                  <hr>
+                </section>
+                <table class="table mb-15">
+                  <thead>
+                  <tr>
+                    <th><input type="checkbox"/></th>
+                    <th>产品名称</th>
+                    <th>库存数量</th>
+                    <th>市场价</th>
+                    <th>销售价</th>
+                    <th>操作</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="cen">
+                    <td><input type="checkbox"/></td>
+                    <td class="lt"><a href="#">正宗陕西洛川红富士 新鲜水果特惠</a></td>
+                    <td>50000斤</td>
+                    <td>￥4.00</td>
+                    <td>￥3.80</td>
+                    <td>
+                      <a title="编辑" class="mr-5">编辑</a>
+                      <a title="详情" class="mr-5">详情</a>
+                      <a title="删除">删除</a>
+                    </td>
+                  </tr>
+                  <tr class="cen">
+                    <td><input type="checkbox"/></td>
+                    <td class="lt"><a href="#">正宗陕西洛川红富士 新鲜水果特惠</a></td>
+                    <td>50000斤</td>
+                    <td>￥4.00</td>
+                    <td>￥3.80</td>
+                    <td>
+                      <a title="编辑" class="mr-5">编辑</a>
+                      <a title="详情" class="mr-5">详情</a>
+                      <a title="删除">删除</a>
+                    </td>
+                  </tr>
+                  <tr class="cen">
+                    <td><input type="checkbox"/></td>
+                    <td class="lt"><a href="#">正宗陕西洛川红富士 新鲜水果特惠</a></td>
+                    <td>50000斤</td>
+                    <td>￥4.00</td>
+                    <td>￥3.80</td>
+                    <td>
+                      <a title="编辑" class="mr-5">编辑</a>
+                      <a title="详情" class="mr-5">详情</a>
+                      <a title="删除">删除</a>
+                    </td>
+                  </tr>
+                  <tr class="cen">
+                    <td><input type="checkbox"/></td>
+                    <td class="lt"><a href="#">正宗陕西洛川红富士 新鲜水果特惠</a></td>
+                    <td>50000斤</td>
+                    <td>￥4.00</td>
+                    <td>￥3.80</td>
+                    <td>
+                      <a title="编辑" class="mr-5">编辑</a>
+                      <a title="详情" class="mr-5">详情</a>
+                      <a title="删除">删除</a>
+                    </td>
+                  </tr>
+                  <tr class="cen">
+                    <td><input type="checkbox"/></td>
+                    <td class="lt"><a href="#">正宗陕西洛川红富士 新鲜水果特惠</a></td>
+                    <td>50000斤</td>
+                    <td>￥4.00</td>
+                    <td>￥3.80</td>
+                    <td>
+                      <a title="编辑" class="mr-5">编辑</a>
+                      <a title="详情" class="mr-5">详情</a>
+                      <a title="删除">删除</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered  mb-15">
+                  <thead>
+                  <tr>
+                    <th>id</th>
+                    <th>产品名称</th>
+                    <th>库存数量</th>
+                    <th>市场价</th>
+                    <th>销售价</th>
+                    <th>操作</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="cen">
+                    <td>#001</td>
+                    <td class="lt"><a href="#">正宗陕西洛川红富士 新鲜水果特惠</a></td>
+                    <td>50000斤</td>
+                    <td>￥4.00</td>
+                    <td>￥3.80</td>
+                    <td>
+                      <a title="编辑" class="mr-5">编辑</a>
+                      <a title="详情" class="mr-5">详情</a>
+                      <a title="删除">删除</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-striped mb-15">
+                  <thead>
+                  <tr>
+                    <th>id</th>
+                    <th>产品名称</th>
+                    <th>库存数量</th>
+                    <th>市场价</th>
+                    <th>销售价</th>
+                    <th>操作</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="cen">
+                    <td>#001</td>
+                    <td class="lt"><a href="#">正宗陕西洛川红富士 新鲜水果特惠</a></td>
+                    <td>50000斤</td>
+                    <td>￥4.00</td>
+                    <td>￥3.80</td>
+                    <td>
+                      <a title="编辑" class="mr-5">编辑</a>
+                      <a title="详情" class="mr-5">详情</a>
+                      <a title="删除">删除</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-striped table-hover">
+                  <thead>
+                  <tr>
+                    <th>id</th>
+                    <th>产品名称</th>
+                    <th>库存数量</th>
+                    <th>市场价</th>
+                    <th>销售价</th>
+                    <th>操作</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="cen">
+                    <td>#001</td>
+                    <td class="lt"><a href="#">正宗陕西洛川红富士 新鲜水果特惠</a></td>
+                    <td>50000斤</td>
+                    <td>￥4.00</td>
+                    <td>￥3.80</td>
+                    <td>
+                      <a title="编辑" class="mr-5">编辑</a>
+                      <a title="详情" class="mr-5">详情</a>
+                      <a title="删除">删除</a>
+                    </td>
+                  </tr>
+                  <tr class="cen">
+                    <td>#001</td>
+                    <td class="lt"><a href="#">正宗陕西洛川红富士 新鲜水果特惠</a></td>
+                    <td>50000斤</td>
+                    <td>￥4.00</td>
+                    <td>￥3.80</td>
+                    <td>
+                      <a title="编辑" class="mr-5">编辑</a>
+                      <a title="详情" class="mr-5">详情</a>
+                      <a title="删除">删除</a>
+                    </td>
+                  </tr>
+                  <tr class="cen">
+                    <td>#001</td>
+                    <td class="lt"><a href="#">正宗陕西洛川红富士 新鲜水果特惠</a></td>
+                    <td>50000斤</td>
+                    <td>￥4.00</td>
+                    <td>￥3.80</td>
+                    <td>
+                      <a title="编辑" class="mr-5">编辑</a>
+                      <a title="详情" class="mr-5">详情</a>
+                      <a title="删除">删除</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+                <!--开始::结束-->
+              </div>
+              <div class="page-wrap" id="form">
+                <!--开始::内容-->
+                <section class="page-hd">
+                  <header>
+                    <h2 class="title">表单结构展示</h2>
+                    <p class="title-description">
+                      两列式表单结构，一般针对产品详情，文章详情应用。
+                    </p>
+                  </header>
+                  <hr>
+                </section>
+                <div class="form-group-col-2">
+                  <div class="form-label">商品标题：</div>
+                  <div class="form-cont">
+                    <input type="text" placeholder="100%输入框..." class="form-control form-boxed">
+                  </div>
+                </div>
+                <div class="form-group-col-2">
+                  <div class="form-label">手机号码：</div>
+                  <div class="form-cont">
+                    <input type="tel" placeholder="手机号码..." class="form-control form-boxed" style="width:300px;">
+                    <button class="btn btn-secondary-outline">测试</button>
+                    <span class="word-aux"><i class="icon-warning-sign"></i>清正确输入11位手机号码</span>
+                  </div>
+                </div>
+                <div class="form-group-col-2">
+                  <div class="form-label">电子邮箱：</div>
+                  <div class="form-cont">
+                    <input type="email" placeholder="电子邮箱..." class="form-control form-boxed">
+                  </div>
+                </div>
+                <div class="form-group-col-2">
+                  <div class="form-label">保持四个字否则截断：</div>
+                  <div class="form-cont">
+                    <select style="width:auto;">
+                      <option>商品分类</option>
+                      <option>女装</option>
+                      <option>男装</option>
+                    </select>
+                    <select style="width:auto;">
+                      <option>子分类</option>
+                      <option>上装</option>
+                      <option>下装</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group-col-2">
+                  <div class="form-label">兴趣爱好：</div>
+                  <div class="form-cont">
+                    <label class="check-box">
+                      <input type="checkbox" checked="checked" name="mmm"/>
+                      <span>读书</span>
+                    </label>
+                    <label class="check-box">
+                      <input type="checkbox" name="mmm"/>
+                      <span>听音乐</span>
+                    </label>
+                    <label class="check-box">
+                      <input type="checkbox" name="mmm"/>
+                      <span>羽毛球</span>
+                    </label>
+                    <label class="check-box">
+                      <input type="checkbox" name="mmm"/>
+                      <span>篮球</span>
+                    </label>
+                    <label class="check-box">
+                      <input type="checkbox" name="mmm"/>
+                      <span>足球</span>
+                    </label>
+                    <label class="check-box">
+                      <input type="checkbox" checked="checked" name="mmm"/>
+                      <span>读书</span>
+                    </label>
+                    <label class="check-box">
+                      <input type="checkbox" name="mmm"/>
+                      <span>听音乐</span>
+                    </label>
+                    <label class="check-box">
+                      <input type="checkbox" name="mmm"/>
+                      <span>羽毛球</span>
+                    </label>
+                    <label class="check-box">
+                      <input type="checkbox" name="mmm"/>
+                      <span>篮球</span>
+                    </label>
+                    <label class="check-box">
+                      <input type="checkbox" name="mmm"/>
+                      <span>足球</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group-col-2">
+                  <div class="form-label">性别：</div>
+                  <div class="form-cont">
+                    <label class="radio">
+                      <input type="radio" name="sex"/>
+                      <span>男士</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="sex"  checked="checked"/>
+                      <span>女士</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="sex"/>
+                      <span>保密</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group-col-2">
+                  <div class="form-label">摘要：</div>
+                  <div class="form-cont">
+                    <textarea class="form-control form-boxed">摘要信息</textarea>
+                  </div>
+                </div>
+                <div class="form-group-col-2">
+                  <div class="form-label"></div>
+                  <div class="form-cont">
+                    <input type="submit" class="btn btn-primary" value="提交表单" />
+                    <input type="reset" class="btn btn-disabled" value="禁止" />
+                  </div>
+                </div>
+                <!--开始::结束-->
+              </div>
+              <div class="page-wrap" id="tkxlzs">
+                <!--开始::内容-->
+                <section class="page-hd">
+                  <header>
+                    <h2 class="title">弹窗系列展示</h2>
+                    <p class="title-description">
+                      文本弹窗class="JopenPanel"，消息提示class="Jmsg"，含遮罩弹窗class="JopenMaskPanel"等。
+                    </p>
+                  </header>
+                  <hr>
+                </section>
+                <div class="panel panel-default">
+                  <!--<div class="panel-hd">按钮</div>-->
+                  <div class="panel-bd">
+                    <button class="btn btn-info JopenPanel mr-10">我是不带遮罩弹窗</button>
+                    <button class="btn btn-info JopenMaskPanel mr-10">我是带遮罩弹窗</button>
+                    <button class="btn btn-info Jmsg">我是HTML5 dialog5秒隐藏文本会话</button>
+                    <dialog><span class="icon-volume-down"></span>你好，我是HTML5 dialog文本会话窗口,前面的图标自行替换</dialog>
+                  </div>
+                </div>
+                <!--开始::结束-->
+              </div>
+              <div class="page-wrap">
+                <!--开始::内容-->
+                <section class="page-hd" id="jdt">
+                  <header>
+                    <h2 class="title">进度条</h2>
+                    <p class="title-description">
+                      HTML5 progress进度条，内部写入防止部分浏览器不是别。
+                    </p>
+                  </header>
+                  <hr>
+                </section>
+                <div class="panel panel-default">
+                  <div class="panel-hd">进度条</div>
+                  <div class="panel-bd">
+                    <progress value="35" max="100">
+                      <span class="progress" style="width:100%;">
+                        <i class="value" style="width:35%;"></i>
+                      </span>
+                    </progress>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-hd">步骤样式一</div>
+                  <div class="panel-bd">
+                    <div class="step-progress">
+                      <ul>
+                        <li class="progressing">
+                          <span>第一步</span>
+                        </li>
+                        <li class="progressing">
+                          <span>第二步</span>
+                        </li>
+                        <li>
+                          <span>第三步</span>
+                        </li>
+                        <li>
+                          <span>第四步</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-hd">步骤样式二</div>
+                  <div class="panel-bd">
+                    <div class="serial-number">
+                      <ul>
+                        <li class="progressing">
+                          <span>首先</span>
+                        </li>
+                        <li class="progressing">
+                          <span>其次</span>
+                        </li>
+                        <li class="progressing">
+                          <span>再次</span>
+                        </li>
+                        <li>
+                          <span>最后</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--开始::结束-->
+              </div>
+              <div class="page-wrap" id="tab">
+                <!--开始::内容-->
+                <section class="page-hd">
+                  <header>
+                    <h2 class="title">Tab选项卡标签页</h2>
+                    <p class="title-description">
+                      Tab选项卡标签页，可复用，带标题和不带标题。
+                    </p>
+                  </header>
+                  <hr>
+                </section>
+                <div class="panel panel-default">
+                  <!--<div class="panel-hd">按钮</div>-->
+                  <div class="panel-bd">
+                    <div class="card">
+                      <div class="card-header">
+                        <div class="tab-title fl">
+                          <strong class="title">Tab选项卡标题</strong>
+                        </div>
+                        <ul class="tab-nav fr">
+                          <li class="active">今日新闻</li>
+                          <li>陕西新闻</li>
+                        </ul>
+                      </div>
+                      <div class="tab-cont" style="display: block;">
+                        TABcontent11
+                      </div>
+                      <div class="tab-cont">
+                        TABcontent222
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <!--<div class="panel-hd">按钮</div>-->
+                  <div class="panel-bd">
+                    <div class="card">
+                      <div class="card-header">
+                        <ul class="tab-nav">
+                          <li class="active">头条新闻</li>
+                          <li>陕西新闻</li>
+                          <li>延安新闻</li>
+                          <li>洛川新闻</li>
+                        </ul>
+                      </div>
+                      <div class="tab-cont" style="display: block;">
+                        TABcontent11
+                      </div>
+                      <div class="tab-cont">
+                        TABcontent222
+                      </div>
+                      <div class="tab-cont">
+                        TABcontent333
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--开始::结束-->
+              </div>
+              <div class="page-wrap" id="ymfzbt">
+                <!--开始::内容-->
+                <section class="page-hd">
+                  <header>
+                    <h2 class="title">页面分组标题</h2>
+                    <p class="title-description">
+                      页面分组标题，场景应用于表单分组，相关信息标题。
+                    </p>
+                  </header>
+                  <hr>
+                </section>
+                <div class="panel panel-default">
+                  <div class="panel-bd">
+                    <fieldset class="field-title">
+                      <legend>引用区块 - 一般风格</legend>
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-bd">
+                    <fieldset class="field-title dashed">
+                      <legend>引用区块 - 虚线</legend>
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-bd">
+                    <fieldset class="field-title center">
+                      <legend>引用区块 - 居中</legend>
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-bd">
+                    <fieldset class="field-title dotted center">
+                      <legend>引用区块 -点划线居中</legend>
+                    </fieldset>
+                  </div>
+                </div>
+                <!--开始::结束-->
+              </div>
+              <div class="page-wrap" id="xzdh">
+                <!--开始::内容-->
+                <section class="page-hd">
+                  <header>
+                    <h2 class="title">动画效果</h2>
+                    <p class="title-description">
+                      数据加载，刷新页面等旋转动画效果。
+                    </p>
+                  </header>
+                  <hr>
+                </section>
+                <div class="panel panel-default">
+                  <div class="panel-bd">
+                    <span><span class="icon-spin icon-spinner"></span>数据加载中...</span>
+                    <span><span class="icon-spin icon-refresh"></span>刷新中...</span>
+                    <span><span class="icon-spin icon-cogs"></span>图标自己根据图标库添加对应属性值...</span>
+                  </div>
+                </div>
+                <button class="btn btn-info xzdh">确认</button>
+                <!--开始::结束-->
+              </div>
+              <div class="page-wrap" id="mbxdh">
+                <!--开始::内容-->
+                <section class="page-hd">
+                  <header>
+                    <h2 class="title">面包屑导航</h2>
+                    <p class="title-description">
+                      页面顶部面包屑导航示例。
+                    </p>
+                  </header>
+                  <hr>
+                </section>
+                <div class="breadcrumb">
+                  <ul>
+                    <li><a href="#">首页</a><i class="icon-angle-right"></i></li>
+                    <li><a href="#">分类页</a><i class="icon-angle-right"></i></li>
+                    <li>详情</li>
+                  </ul>
+                </div>
+                <!--开始::结束-->
+              </div>
+              <div class="page-wrap" id="webtcczj">
+                <!--开始::内容-->
+                <section class="page-hd">
+                  <header>
+                    <h2 class="title">web弹层组件</h2>
+                    <p class="title-description">
+                      npm i layui-src
+                      layer是一款近年来备受青睐的web弹层组件，她具备全方位的解决方案，致力于服务各水平段的开发人员，您的页面会轻松地拥有丰富友好的操作体验。更多效果查看其<a href="http://layer.layui.com/" target="_blank">官方文档</a>
+                    </p>
+                  </header>
+                  <hr>
+                </section>
+                <div class="panel panel-default">
+                  <div class="panel-bd">
+                    <button id="a1" class="btn btn-info">Alert</button>
+                    <button id="a2" class="btn btn-info">询问层</button>
+                    <button id="a3" class="btn btn-info">提示层</button>
+                    <button id="a4" class="btn btn-info">加载层</button>
+                    <button id="a5" class="btn btn-info">小tips</button>
+                    <button id="a6" class="btn btn-info">Tab层</button>
+                    <button id="a7" class="btn btn-info">iframe弹窗</button>
+                  </div>
+                </div>
+                <!--开始::结束-->
+              </div>
+            </div>
           </main>
         </div>
+      </div>
+
+      <div class="mask"></div>
+      <div class="dialog">
+        <div class="dialog-hd">
+          <strong class="lt-title">标题</strong>
+          <a class="rt-operate icon-remove JclosePanel" title="关闭"></a>
+        </div>
+        <div class="dialog-bd">
+          <!--start::-->
+          <p>这里是基础弹窗,可以定义文本信息，HTML信息这里是基础弹窗,可以定义文本信息，HTML信息。</p>
+          <!--end::-->
+        </div>
+        <div class="dialog-ft">
+          <button class="btn btn-info JyesBtn">确认</button>
+          <button class="btn btn-secondary JnoBtn">关闭</button>
+        </div>
+      </div>
+      <div class="dialog2">
+        <div class="icon-spin icon-spinner">数据加载中...</div>
       </div>
     </div>
 </template>
@@ -357,13 +1291,11 @@ export default {
   name: 'Index',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js Home',
-      pageWrap1: true
+      msg: 'Welcome to Your Vue.js Home'
     }
   },
   methods: {
     elasticBoxLayout: function () {
-      this.pageWrap1 = false
     }
   }
 }
