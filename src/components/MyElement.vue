@@ -1,6 +1,6 @@
 <template xmlns:v-on="http://www.w3.org/1999/xhtml">
     <div id="app">
-      <el-checkbox v-model="checked">备选项</el-checkbox>
+<!--      https://element.faas.ele.me/#/zh-CN-->
       <br/>
       <div style="width: 200px">
       <el-progress :percentage="50" :stroke-width="10"></el-progress>
