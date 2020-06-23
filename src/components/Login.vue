@@ -21,8 +21,16 @@
               </div>
             </li>
             <li>
+              <div class="form-group">
+                <label class="control-label">验证码</label>
+                <input type="text" placeholder="验证码..." class="form-control form-underlined" id="imageCode" v-model="imageCode"/>
+                <img src="http://localhost:8889/code/image">
+              </div>
+
+            </li>
+            <li>
               <label class="check-box">
-                <input type="checkbox" name="remember"/>
+                <input type="checkbox" name="remember" v-model="checked"/>
                 <span>记住账号密码</span>
               </label>
             </li>
@@ -30,8 +38,8 @@
               <button class="btn btn-lg btn-block" id="entry" v-on:click="login">立即登录</button>
             </li>
             <li>
-              <p class="btm-info">©Copyright 2006-2010 <a href="#" target="_blank" title="DeathGhost">DeathGhost.cn</a></p>
-              <address class="btm-info">陕西省西安市雁塔区</address>
+              <p class="btm-info">©Copyright 2017-2020 <a href="#" target="_blank" title="DeathGhost">wuzz</a></p>
+              <address class="btm-info">浙江省杭州市</address>
             </li>
           </ul>
         </div>
@@ -62,9 +70,11 @@ export default {
   name: 'Login',
   data () {
     return {
+      checked: false,
       msg: 'Welcome to Your Vue.js Home',
       username: '',
-      password: ''
+      password: '',
+      imageCode: ''
     }
   },
   methods: {
@@ -81,8 +91,10 @@ export default {
         }],
         url: '/api/authentication/form',
         data: {
-          'username': 'wuehkdhzsjhiu2',
-          'password': this.password
+          'username': this.username,
+          'password': this.password,
+          'imageCode': this.imageCode,
+          'remember-me': this.checked
         }
       }).then(function (res) {
         alert(JSON.stringify(res.data))
