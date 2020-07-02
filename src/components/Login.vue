@@ -34,6 +34,7 @@
                 <span>记住账号密码</span>
               </label>
             </li>
+            <a href="http://localhost:8889/auth/qq">QQ登录</a>
             <li>
               <button class="btn btn-lg btn-block" id="entry" v-on:click="login">立即登录</button>
             </li>
