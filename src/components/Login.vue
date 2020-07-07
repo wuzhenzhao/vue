@@ -26,6 +26,8 @@
                 <input type="text" placeholder="验证码..." class="form-control form-underlined" id="imageCode" v-model="imageCode"/>
                 <img src="http://localhost:8889/code/image">
               </div>
+              <label class="control-label">短信验证码</label>
+              <input type="text"  class="form-control form-underlined" v-model="smsCode"/>
 
             </li>
             <li>
@@ -75,7 +77,8 @@ export default {
       msg: 'Welcome to Your Vue.js Home',
       username: '',
       password: '',
-      imageCode: ''
+      imageCode: '',
+      smsCode: ''
     }
   },
   methods: {
@@ -83,19 +86,23 @@ export default {
       this.$axios({
         method: 'POST',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Authorization': 'Basic d3V6ekNsaWVudElkOnd1enpTZWNyZXQ='
         },
         // 在请求之前对data传参进行格式转换
         transformRequest: [function (data) {
           data = qs.stringify(data)
           return data
         }],
-        url: '/api/authentication/form',
+        // url: '/api/authentication/form',
+        url: '/api/authentication/mobile',
         data: {
           'username': this.username,
           'password': this.password,
           'imageCode': this.imageCode,
-          'remember-me': this.checked
+          'remember-me': this.checked,
+          'smsCode': this.smsCode,
+          'mobile': '13888888888'
         }
       }).then(function (res) {
         alert(JSON.stringify(res.data))
