@@ -5,6 +5,7 @@ import Home from '@/components/Home'
 import Index from '@/components/Index'
 import Login from '@/components/Login'
 import MyElement from '@/components/MyElement'
+import ElementIndex from '@/components/ElementIndex'
 
 Vue.use(Router)
 
@@ -49,6 +50,14 @@ export default new Router({
       component: MyElement,
       meta: {
         title: 'element测试'
+      }
+    },
+    {
+      path: '/elementIndex',
+      name: 'ElementIndex',
+      component: ElementIndex,
+      meta: {
+        title: 'elementIndex测试'
       }
     }
   ]
