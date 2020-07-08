@@ -8,7 +8,7 @@
         background-color="#545c64"
         text-color="#fff"
         active-text-color="#ffd04b"
-        style="left: 150px" >
+        style="left: 200px;position: fixed;width: 100%" >
         <el-menu-item index="1">处理中心</el-menu-item>
         <el-submenu index="2">
           <template slot="title">我的工作台</template>
@@ -35,7 +35,7 @@
           background-color="#545c64"
           text-color="#fff"
           active-text-color="#ffd04b"
-          style="width: 150px;margin-top: -62px;" >
+          style="width: 200px;position: fixed;height: 100%;">
           <el-submenu index="1">
             <template slot="title">
               <i class="el-icon-location"></i>
@@ -65,6 +65,10 @@
           <el-menu-item index="4">
             <i class="el-icon-setting"></i>
             <span slot="title">导航四</span>
+          </el-menu-item>
+          <el-menu-item index="5">
+            <i class="el-icon-setting"></i>
+            <span slot="title">导航5</span>
           </el-menu-item>
         </el-menu>
       </el-col>
