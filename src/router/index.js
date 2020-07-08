@@ -9,6 +9,7 @@ import MyElement from '@/components/MyElement'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history', // 消除路由上面的# 号
   routes: [
     {
       path: '/',
