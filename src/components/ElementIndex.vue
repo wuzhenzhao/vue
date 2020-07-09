@@ -1,4 +1,4 @@
-<template xmlns:v-on="http://www.w3.org/1999/xhtml">
+<template xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
     <div id="app">
       <div style="left: 200px;position: fixed;width: 100%;" >
         <el-menu
@@ -26,11 +26,21 @@
           <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
           <el-menu-item index="5">系统设置</el-menu-item>
         </el-menu>
+
+        <div id="box">
+          <ul id="con1" ref="con1" :class="{anim:animate==true}">
+            <a>
+            <li v-for='item in items' :key="item" v-on:click="animateClick">
+              <i class="el-icon-bell"></i>{{item}}
+            </li>
+            </a>
+          </ul>
+        </div>
       </div>
-        <div style="left: 200px;position: fixed;width: 100%;height: 100%;overflow: auto;top: 60px">
-        <div>
+
+        <div style="left: 200px;width: 100%;position: fixed;overflow: auto;top: 90px;bottom: 0;">
           <div class="block">
-            <span class="demonstration">默认 Hover 指示器触发</span>
+<!--            <span class="demonstration">默认 Hover 指示器触发</span>-->
             <el-carousel height="150px" :autoplay="false">
               <el-carousel-item v-for="item in urls" :key="item" :style="{'backgroundImage': 'url(' + item + ')'}"
               style="background-size: auto 100%">
@@ -39,10 +49,11 @@
             </el-carousel>
           </div>
           <div class="block">
-            <span class="demonstration">Click 指示器触发</span>
+<!--            <span class="demonstration">Click 指示器触发</span>-->
             <el-carousel trigger="click" height="150px">
-              <el-carousel-item v-for="item in 4" :key="item">
-                <h3 class="small">{{ item }}</h3>
+              <el-carousel-item v-for="item in urls" :key="item" :style="{'backgroundImage': 'url(' + item + ')'}"
+              style="background-size: auto 100%">
+                <h3 class="small">1</h3>
               </el-carousel-item>
             </el-carousel>
           </div>
@@ -51,28 +62,25 @@
             <el-image v-for="url in urls" :key="url" :src="url" :lazy="false"></el-image>
           </div>
           </el-scrollbar>
-        </div>
-        <div style="width: 600px">
-        <el-table
-          :data="tableData"
-          border
-          style="width: 100%">
-          <el-table-column
-            prop="date"
-            label="日期"
-            width="180">
-          </el-table-column>
-          <el-table-column
-            prop="name"
-            label="姓名"
-            width="180">
-          </el-table-column>
-          <el-table-column
-            prop="address"
-            label="地址">
-          </el-table-column>
-        </el-table>
-        </div>
+
+          <el-table
+            :data="tableData"
+            border>
+            <el-table-column
+              prop="date"
+              label="日期"
+              width="180">
+            </el-table-column>
+            <el-table-column
+              prop="name"
+              label="姓名"
+              width="180">
+            </el-table-column>
+            <el-table-column
+              prop="address"
+              label="地址">
+            </el-table-column>
+          </el-table>
       </div>
 
       <el-col :span="12">
@@ -157,8 +165,17 @@ export default {
         'https://fuss10.elemecdn.com/d/e6/c4d93a3805b3ce3f323f7974e6f78jpeg.jpeg',
         'https://fuss10.elemecdn.com/3/28/bbf893f792f03a54408b3b7a7ebf0jpeg.jpeg',
         'https://fuss10.elemecdn.com/2/11/6535bcfb26e4c79b48ddde44f4b6fjpeg.jpeg'
+      ],
+      animate: false,
+      items: [
+        '马云在小米扫地。。。。。',
+        '雷军在阿里拖地。。。。。',
+        '王勤在百度倒垃圾。。。。'
       ]
     }
+  },
+  created () {
+    setInterval(this.scroll, 3000)
   },
   methods: {
     handleSelect: function (key, keyPath) {
@@ -170,6 +187,17 @@ export default {
     },
     load () {
       this.count += 2
+    },
+    scroll () {
+      this.animate = true // 因为在消息向上滚动的时候需要添加css3过渡动画，所以这里需要设置true
+      setTimeout(() => { //  这里直接使用了es6的箭头函数，省去了处理this指向偏移问题，代码也比之前简化了很多
+        this.items.push(this.items[0]) // 将数组的第一个元素添加到数组的
+        this.items.shift() // 删除数组的第一个元素
+        this.animate = false // margin-top 为0 的时候取消过渡动画，实现无缝滚动
+      }, 500)
+    },
+    animateClick () {
+      alert('.......')
     }
   }
 }
@@ -191,6 +219,10 @@ export default {
     background-color: #d3dce6;
   }
 
+  .el-carousel__arrow {
+    background-color: green;
+  }
+
   body .el-scrollbar__wrap {
     overflow-x: hidden;
   }
@@ -198,4 +230,23 @@ export default {
     background-color: red;
   }
 
+  #box{
+    width: 300px;
+    height: 32px;
+    overflow: hidden;
+    padding-left: 10px;
+    border: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    width: 100%
+  }
+  .anim{
+    transition: all 0.5s;
+    margin-top: -30px;
+  }
+  #con1 li{
+    list-style: none;
+    line-height: 30px;
+    height: 30px;
+    color: #F56C6C;
+  }
 </style>
