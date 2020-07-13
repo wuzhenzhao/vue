@@ -5,6 +5,7 @@
       <div style="height: 300px;width: 300px;float: left">
         <h2>这是一个标题h2</h2>
         <h3>这是一个标题h3</h3>
+        <button v-on:click="qrcode">二维码</button><br/>
         <button v-on:click="tiaozhuan">页面跳转按钮Ajax</button><br/>
         <button v-on:click="tiaozhuanIndex">页面首页跳转按钮Index</button><br/>
         <button v-on:click="tiaozhuanElement">页面跳转按钮Element</button><br/>
@@ -88,6 +89,8 @@
       <h1 v-if="awesome">Vue is awesome!</h1>
       <h1 v-else>Oh no 😢</h1>
     </div>
+    <img :src = "qrcodeImage" >
+    <img src = "http://localhost:8889/qrcode" >
   </div>
 </template>
 
@@ -105,10 +108,28 @@ export default {
       isActive: true,
       hasError: true,
       errorClass: 'text-danger',
-      awesome: false
+      awesome: false,
+      qrcodeImage: ''
     }
   },
   methods: {
+    qrcode: function () {
+      this.qrcodeImage = null
+      this.$axios({
+        method: 'get',
+        url: '/api/qrcode',
+        responseType: 'arraybuffer'
+      }).then(function (res) {
+        return 'data:image/png;base64,' + btoa(
+          new Uint8Array(res.data)
+            .reduce((data, byte) => data + String.fromCharCode(byte), '')
+        )
+      }).then(data => {
+        this.qrcodeImage = data
+      }).catch(function (err) {
+        alert(err)
+      })
+    },
     tiaozhuan: function () {
       this.$router.push('/home')
     },
