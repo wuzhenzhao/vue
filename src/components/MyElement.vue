@@ -97,6 +97,19 @@
         <el-button type="danger" icon="el-icon-delete" circle></el-button>
       </el-row>
       <i class="el-icon-setting"></i>
+
+      <el-upload ref="upload" action="http://10.16.81.43:8654/api/eemva/api/data/importEnterpriseRisk" :auto-upload="false"
+                 :http-request="uploadFile"
+                 :on-preview="handlePreview"
+                 :on-remove="handleRemove"
+                 :on-success="handleSucess" :file-list="fileList" >
+        <el-button slot="trigger" size="small" type="primary">选取文件</el-button>
+        <el-button style="margin-left: 10px;" size="small" type="success" @click="submitUpload">上传到服务器</el-button>
+        <el-tag v-show="uploadLogo=='1'" >上传中</el-tag>
+        <el-tag v-show="uploadLogo=='2'" type="success">上传成功</el-tag>
+        <el-tag v-show="uploadLogo=='3'" type="danger">上传失败</el-tag>
+      </el-upload>
+
     </div>
 </template>
 <script>
@@ -104,6 +117,9 @@ export default {
   name: 'MyElement',
   data () {
     return {
+      fileList: [],
+      fileData: 1,
+      uploadLogo: 0,
       msg: 'Welcome to Your Vue.js MyElement',
       checked: true,
       tableData: [{
@@ -143,6 +159,40 @@ export default {
       setTimeout(() => {
         loading.close()
       }, 2000)
+    },
+    submitUpload: function () {
+      this.fileData = new FormData()
+      this.$refs.upload.submit()
+      this.uploadLogo = '1'
+      var that = this
+      this.fileData.append('name', 'wuzz')
+      this.$axios({
+        method: 'post',
+        type: 'post',
+        url: '/api/eemva/api/data/importEnterpriseRisk',
+        data: that.fileData,
+        contentType: false,
+        dataType: 'json'
+      }).then(function (res) {
+        that.uploadLogo = '2'
+        let data = res.data.success
+        alert(JSON.stringify(data))
+        console.log(res)
+      }).catch(function (err) {
+        alert(err)
+      })
+    },
+    uploadFile: function (file) {
+      this.fileData.append('file', file.file)
+    },
+    handleRemove (file, fileList) {
+      console.log(file, fileList)
+    },
+    handlePreview (file) {
+      console.log(file)
+    },
+    handleSucess (file) {
+      console.log(file)
     }
   }
 }
