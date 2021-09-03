@@ -7,6 +7,7 @@ import Login from '@/components/Login'
 import MyElement from '@/components/MyElement'
 import ElementIndex from '@/components/ElementIndex'
 import WebSocketIndex from '@/components/WebSocketIndex'
+import SockjsIndex from '@/components/SockjsIndex'
 Vue.use(Router)
 
 export default new Router({
@@ -66,6 +67,14 @@ export default new Router({
       component: WebSocketIndex,
       meta: {
         title: 'webSocketIndex测试'
+      }
+    },
+    {
+      path: '/sockjsIndex',
+      name: 'SockjsIndex',
+      component: SockjsIndex,
+      meta: {
+        title: 'SockjsIndex测试'
       }
     }
   ]

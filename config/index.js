@@ -16,6 +16,10 @@ module.exports = {
         pathRewrite: {
           '^/api': ''
         }
+      },
+      '/endpointOyzc': {
+        target: 'http://10.16.81.43:8889/', //需要代理的网址
+        changeOrigin: true
       }
     },
 
