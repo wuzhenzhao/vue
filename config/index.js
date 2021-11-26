@@ -10,16 +10,23 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api': {
-        target: 'http://10.16.81.43:8654/', //需要代理的网址
+      '/cem': {
+        target: 'http://10.16.81.43:8730/', //需要代理的网址
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
         }
       },
       '/endpointOyzc': {
-        target: 'http://10.16.81.43:8889/', //需要代理的网址
+        target: 'http://10.16.81.43:8765/', //需要代理的网址
         changeOrigin: true
+      },
+      '/api': {
+        target: 'http://10.16.81.43:8765/', //需要代理的网址
+        changeOrigin: true,
+        // pathRewrite: {
+        //   '^/api': ''
+        // }
       }
     },
 

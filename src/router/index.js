@@ -11,14 +11,19 @@ import SockjsIndex from '@/components/SockjsIndex'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history', // 消除路由上面的# 号
+  mode: 'hash', // 消除路由上面的# 号
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld,
+      // name: 'HelloWorld',
+      // component: HelloWorld,
+      // meta: {
+      //   title: '测试Hello World'
+      // }
+      name: 'SockjsIndex',
+      component: SockjsIndex,
       meta: {
-        title: '测试Hello World'
+        title: 'SockjsIndex测试'
       }
     },
     {
