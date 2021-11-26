@@ -101,7 +101,7 @@
                element-loading-spinner="el-icon-loading"
                element-loading-background="rgba(0, 0, 0, 0.8)">
           <el-input type="textarea" v-model="amqConsumerData.message" rows="15"
-                    disabled="true"
+                    :disabled="disabledInput"
           style="width: 1000px;"></el-input>
           </div>
         </el-form-item>
@@ -175,7 +175,7 @@
                element-loading-spinner="el-icon-loading"
                element-loading-background="rgba(0, 0, 0, 0.8)">
             <el-input type="textarea" v-model="kafkaConsumerData.message" rows="15"
-                      disabled="true"
+                      :disabled="disabledInput"
                       style="width: 1000px;"></el-input>
           </div>
         </el-form-item>
@@ -278,7 +278,7 @@
                element-loading-spinner="el-icon-loading"
                element-loading-background="rgba(0, 0, 0, 0.8)">
             <el-input type="textarea" v-model="rabbitConsumerData.message" rows="15"
-                      disabled="true"
+                      :disabled="disabledInput"
                       style="width: 1000px;"></el-input>
           </div>
         </el-form-item>
@@ -292,7 +292,7 @@ import Stomp from 'stompjs'
 export default {
   data () {
     return {
-      show2: true,
+      disabledInput: true,
       rabbitImage: require('../images/rabbit.jpg'),
       kafkaImage: require('../images/kafka.jpg'),
       activemqImage: require('../images/activemq.jpg'),
