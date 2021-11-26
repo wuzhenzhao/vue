@@ -21,23 +21,23 @@
     <div style="width:300px;margin-left: 20px;margin-top: -20px;display:flex">
       <el-form ref="form" :model="form" label-width="80px" v-show="show"
                style="margin-top: 20px">
-        <el-form-item label="IP:">
-          <el-input v-model="amqProducerData.ip" style="width: 200px"></el-input>
+        <el-form-item label="IP:" required>
+          <el-input  v-model="amqProducerData.ip" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="端口:">
+        <el-form-item label="端口:" required>
           <el-input v-model="amqProducerData.port" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="用户名:">
+        <el-form-item label="用户名:" required>
           <el-input v-model="amqProducerData.username" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="密码:">
+        <el-form-item label="密码:" required>
           <el-input v-model="amqProducerData.password" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="队列/主题:">
+        <el-form-item label="主题:" required>
           <el-input v-model="amqProducerData.topic" style="width: 200px"></el-input>
         </el-form-item>
         <div style="display: flex;">
@@ -66,23 +66,23 @@
     <div style="width:300px;margin-left: 20px;margin-top: 10px;display:flex;">
     <el-form ref="form" :model="form" label-width="80px" v-show="show"
              style="margin-top: 20px">
-      <el-form-item label="IP">
+      <el-form-item label="IP" required>
         <el-input v-model="amqConsumerData.ip" style="width: 200px"></el-input>
       </el-form-item>
 
-      <el-form-item label="端口">
+      <el-form-item label="端口" required>
         <el-input v-model="amqConsumerData.port" style="width: 200px"></el-input>
       </el-form-item>
 
-      <el-form-item label="用户名">
+      <el-form-item label="用户名" required>
         <el-input v-model="amqConsumerData.username" style="width: 200px"></el-input>
       </el-form-item>
 
-      <el-form-item label="密码">
+      <el-form-item label="密码" required>
         <el-input v-model="amqConsumerData.password" style="width: 200px"></el-input>
       </el-form-item>
 
-      <el-form-item label="队列/主题">
+      <el-form-item label="主题" required>
         <el-input v-model="amqConsumerData.topic" style="width: 200px"></el-input>
       </el-form-item>
       <div style="display: flex">
@@ -111,14 +111,14 @@
     <div style="width:300px;margin-left: 20px;margin-top: -10px;display:flex">
       <el-form ref="form" :model="form" label-width="80px" v-show="kafkaShow"
                style="margin-top: 20px">
-        <el-form-item label="IP:">
+        <el-form-item label="IP:" required>
           <el-input v-model="kafkaProducerData.ip" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="端口:">
+        <el-form-item label="端口:" required>
           <el-input v-model="kafkaProducerData.port" style="width: 200px"></el-input>
         </el-form-item>
-        <el-form-item label="队列/主题:">
+        <el-form-item label="主题:" required>
           <el-input v-model="kafkaProducerData.topic" style="width: 200px"></el-input>
         </el-form-item>
         <div style="display: flex;">
@@ -147,15 +147,15 @@
     <div style="width:300px;margin-left: 20px;margin-top: 10px;display:flex">
       <el-form ref="form" :model="form" label-width="80px" v-show="kafkaShow"
                style="margin-top: 20px;">
-        <el-form-item label="IP">
+        <el-form-item label="IP" required>
           <el-input v-model="kafkaConsumerData.ip" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="端口">
+        <el-form-item label="端口" required>
           <el-input v-model="kafkaConsumerData.port" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="队列/主题">
+        <el-form-item label="主题" required>
           <el-input v-model="kafkaConsumerData.topic" style="width: 200px"></el-input>
         </el-form-item>
 
@@ -185,29 +185,29 @@
     <div style="width:300px;margin-left: 20px;margin-top: -10px;display:flex">
       <el-form ref="form" :model="form" label-width="80px" v-show="rabbitShow"
                style="margin-top: 20px">
-        <el-form-item label="IP">
+        <el-form-item label="IP" required>
           <el-input v-model="rabbitProducerData.ip" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="端口">
+        <el-form-item label="端口" required>
           <el-input v-model="rabbitProducerData.port" style="width: 200px"></el-input>
         </el-form-item>
-        <el-form-item label="用户名">
+        <el-form-item label="用户名" required>
           <el-input v-model="rabbitProducerData.username" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="密码">
+        <el-form-item label="密码" required>
           <el-input v-model="rabbitProducerData.password" style="width: 200px"></el-input>
         </el-form-item>
-        <el-form-item label="交换机">
+        <el-form-item label="交换机" required>
           <el-input v-model="rabbitProducerData.exchange" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="路由键">
+        <el-form-item label="路由键" required>
           <el-input v-model="rabbitProducerData.routerKey" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="队列/主题">
+        <el-form-item label="主题" required>
           <el-input v-model="rabbitProducerData.topic" style="width: 200px"></el-input>
         </el-form-item>
         <div style="display: flex;margin-left: 220px;margin-top: -60px">
@@ -236,29 +236,29 @@
     <div style="width:300px;margin-left: 20px;margin-top: 10px;display:flex">
       <el-form ref="form" :model="form" label-width="80px" v-show="rabbitShow"
                style="margin-top: 20px;">
-        <el-form-item label="IP">
+        <el-form-item label="IP" required>
           <el-input v-model="rabbitConsumerData.ip" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="端口">
+        <el-form-item label="端口" required>
           <el-input v-model="rabbitConsumerData.port" style="width: 200px"></el-input>
         </el-form-item>
-        <el-form-item label="用户名">
+        <el-form-item label="用户名" required>
           <el-input v-model="rabbitConsumerData.username" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="密码">
+        <el-form-item label="密码" required>
           <el-input v-model="rabbitConsumerData.password" style="width: 200px"></el-input>
         </el-form-item>
-        <el-form-item label="交换机">
+        <el-form-item label="交换机" required>
           <el-input v-model="rabbitConsumerData.exchange" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="路由键">
+        <el-form-item label="路由键" required>
           <el-input v-model="rabbitConsumerData.routerKey" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="队列/主题">
+        <el-form-item label="主题" required>
           <el-input v-model="rabbitConsumerData.topic" style="width: 200px"></el-input>
         </el-form-item>
 
