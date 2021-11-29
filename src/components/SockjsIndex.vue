@@ -199,6 +199,9 @@
         <el-form-item label="密码" required>
           <el-input v-model="rabbitProducerData.password" style="width: 200px"></el-input>
         </el-form-item>
+        <el-form-item label="类型" required>
+          <el-input v-model="rabbitProducerData.directType" style="width: 200px"></el-input>
+        </el-form-item>
         <el-form-item label="交换机" required>
           <el-input v-model="rabbitProducerData.exchange" style="width: 200px"></el-input>
         </el-form-item>
@@ -249,6 +252,9 @@
 
         <el-form-item label="密码" required>
           <el-input v-model="rabbitConsumerData.password" style="width: 200px"></el-input>
+        </el-form-item>
+        <el-form-item label="类型" required>
+          <el-input v-model="rabbitConsumerData.directType" style="width: 200px"></el-input>
         </el-form-item>
         <el-form-item label="交换机" required>
           <el-input v-model="rabbitConsumerData.exchange" style="width: 200px"></el-input>
@@ -355,6 +361,7 @@ export default {
         routerKey: 'mqtools_key',
         username: 'root',
         password: 'AUHQ5P4V',
+        directType: 'direct',
         rabbitProducerSuccessShow: false,
         rabbitSendMessageOK: true,
         message: ''
@@ -366,6 +373,7 @@ export default {
         exchange: 'mqtools_exchange',
         routerKey: 'mqtools_key',
         username: 'root',
+        directType: 'direct',
         password: 'AUHQ5P4V',
         rabbitConsumerSuccessShow: false,
         rabbitLoading: false,
@@ -499,7 +507,8 @@ export default {
           'password': this.rabbitConsumerData.password,
           'exchange': this.rabbitConsumerData.exchange,
           'routerKey': this.rabbitConsumerData.routerKey,
-          'topic': this.rabbitConsumerData.topic
+          'topic': this.rabbitConsumerData.topic,
+          'directType': this.rabbitConsumerData.directType
         }
       }).then((res) => {
         console.log(JSON.stringify(res.data))
@@ -560,6 +569,7 @@ export default {
           'password': this.rabbitProducerData.password,
           'exchange': this.rabbitProducerData.exchange,
           'routerKey': this.rabbitProducerData.routerKey,
+          'directType': this.rabbitProducerData.directType,
           'topic': this.rabbitProducerData.topic
         }
       }).then((res) => {
