@@ -121,6 +121,12 @@
         <el-form-item label="主题:" required>
           <el-input v-model="kafkaProducerData.topic" style="width: 200px"></el-input>
         </el-form-item>
+        <el-form-item label="用户名:">
+          <el-input v-model="kafkaProducerData.username" style="width: 200px"></el-input>
+        </el-form-item>
+        <el-form-item label="密码:">
+          <el-input v-model="kafkaProducerData.password" style="width: 200px"></el-input>
+        </el-form-item>
         <div style="display: flex;">
           <el-form-item>
             <el-button type="primary" @click="onKafkaProducer">发起连接</el-button>
@@ -158,8 +164,13 @@
         <el-form-item label="主题" required>
           <el-input v-model="kafkaConsumerData.topic" style="width: 200px"></el-input>
         </el-form-item>
-
-        <div style="display: flex">
+        <el-form-item label="用户名:" >
+          <el-input v-model="kafkaConsumerData.username" style="width: 200px"></el-input>
+        </el-form-item>
+        <el-form-item label="密码:" >
+          <el-input v-model="kafkaConsumerData.password" style="width: 200px"></el-input>
+        </el-form-item>
+          <div style="display: flex">
           <el-form-item>
             <el-button type="primary" @click="onKafkaConsumer">立即订阅</el-button>
           </el-form-item>
@@ -210,7 +221,7 @@
           <el-input v-model="rabbitProducerData.routerKey" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="主题" required>
+        <el-form-item label="Queue" required>
           <el-input v-model="rabbitProducerData.topic" style="width: 200px"></el-input>
         </el-form-item>
         <div style="display: flex;margin-left: 220px;margin-top: -60px">
@@ -264,7 +275,7 @@
           <el-input v-model="rabbitConsumerData.routerKey" style="width: 200px"></el-input>
         </el-form-item>
 
-        <el-form-item label="主题" required>
+        <el-form-item label="Queue" required>
           <el-input v-model="rabbitConsumerData.topic" style="width: 200px"></el-input>
         </el-form-item>
 
@@ -343,7 +354,9 @@ export default {
         topic: 'mqtools',
         kafkaProducerSuccessShow: false,
         kafkaSendMessageOK: true,
-        message: ''
+        message: '',
+        username: '',
+        password: ''
       },
       kafkaConsumerData: {
         ip: '10.19.189.56',
@@ -351,7 +364,9 @@ export default {
         topic: 'mqtools',
         kafkaConsumerSuccessShow: false,
         kafkaLoading: false,
-        message: ''
+        message: '',
+        username: '',
+        password: ''
       },
       rabbitProducerData: {
         ip: '10.19.189.56',
@@ -471,7 +486,9 @@ export default {
         data: {
           'ip': this.kafkaConsumerData.ip,
           'port': this.kafkaConsumerData.port,
-          'topic': this.kafkaConsumerData.topic
+          'topic': this.kafkaConsumerData.topic,
+          'username': this.kafkaConsumerData.username,
+          'password': this.kafkaConsumerData.password
         }
       }).then((res) => {
         let data = res.data.code
@@ -652,7 +669,9 @@ export default {
         data: {
           'ip': this.kafkaProducerData.ip,
           'port': this.kafkaProducerData.port,
-          'topic': this.kafkaProducerData.topic
+          'topic': this.kafkaProducerData.topic,
+          'username': this.kafkaProducerData.username,
+          'password': this.kafkaProducerData.password
         }
       }).then((res) => {
         let data = res.data.message

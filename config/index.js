@@ -11,18 +11,18 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/cem': {
-        target: 'http://10.16.81.43:8730/', //需要代理的网址
+        target: 'http://192.168.1.1:8730/', //需要代理的网址
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
         }
       },
       '/endpointOyzc': {
-        target: 'http://10.16.81.43:8765/', //需要代理的网址
+        target: 'http://192.168.1.1:8765/', //需要代理的网址
         changeOrigin: true
       },
       '/api': {
-        target: 'http://10.16.81.43:8765/', //需要代理的网址
+        target: 'http://192.168.1.1:8765/', //需要代理的网址
         changeOrigin: true,
         // pathRewrite: {
         //   '^/api': ''
@@ -31,7 +31,7 @@ module.exports = {
     },
 
     // Various Dev Server settings
-    host: '10.16.81.43', // can be overwritten by process.env.HOST
+    host: '192.168.1.1', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,

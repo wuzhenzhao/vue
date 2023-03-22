@@ -98,7 +98,7 @@
       </el-row>
       <i class="el-icon-setting"></i>
 
-      <el-upload ref="upload" action="http://10.16.81.43:8654/api/eemva/api/data/importEnterpriseRisk" :auto-upload="false"
+      <el-upload ref="upload" action="http://192.168.1.1:8654/api/eemva/api/data/importEnterpriseRisk" :auto-upload="false"
                  :http-request="uploadFile"
                  :on-preview="handlePreview"
                  :on-remove="handleRemove"
