@@ -1,7 +1,6 @@
 # project logs
 logs/
 out/
-dist/
 node_modules/
 # jrebel
 rebel.xml
