@@ -333,7 +333,7 @@ export default {
         desc: '11111'
       },
       amqProducerData: {
-        ip: '10.19.189.56',
+        ip: '192.168.1.1',
         port: '7018',
         username: 'admin',
         password: 'es046kCI',
@@ -341,7 +341,7 @@ export default {
         message: ''
       },
       amqConsumerData: {
-        ip: '10.19.189.56',
+        ip: '192.168.1.1',
         port: '7018',
         username: 'admin',
         password: 'es046kCI',
@@ -349,7 +349,7 @@ export default {
         message: ''
       },
       kafkaProducerData: {
-        ip: '10.19.189.56',
+        ip: '192.168.1.1',
         port: '29092',
         topic: 'mqtools',
         kafkaProducerSuccessShow: false,
@@ -359,7 +359,7 @@ export default {
         password: ''
       },
       kafkaConsumerData: {
-        ip: '10.19.189.56',
+        ip: '192.168.1.1',
         port: '29092',
         topic: 'mqtools',
         kafkaConsumerSuccessShow: false,
@@ -369,7 +369,7 @@ export default {
         password: ''
       },
       rabbitProducerData: {
-        ip: '10.19.189.56',
+        ip: '192.168.1.1',
         port: '6005',
         topic: 'mqtools_topic',
         exchange: 'mqtools_exchange',
@@ -382,7 +382,7 @@ export default {
         message: ''
       },
       rabbitConsumerData: {
-        ip: '10.19.189.56',
+        ip: '192.168.1.1',
         port: '6005',
         topic: 'mqtools_topic',
         exchange: 'mqtools_exchange',
