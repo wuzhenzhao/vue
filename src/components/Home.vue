@@ -1,6 +1,6 @@
 <template xmlns:v-on="http://www.w3.org/1999/xhtml">
     <div id="app">
-      <button  v-on:click="send">发送ajax请求</button>
+      <button  v-on:click="send">发送ajax请求1</button>
       <button  v-on:click="sendpost">post发送ajax请求</button>
       <button-counter></button-counter>
       <button-counter></button-counter>
@@ -23,10 +23,9 @@ export default {
     send: function () {
       this.$axios({
         method: 'get',
-        url: '/api/wuzz/get.json?name=' + 'wuzz'
+        url: '/wuzz/get.json?name=' + 'wuzz'
       }).then(function (res) {
-        let data = res.data.success
-        alert(JSON.stringify(data))
+        alert(JSON.stringify(res.data))
         console.log(res)
       }).catch(function (err) {
         alert(err)

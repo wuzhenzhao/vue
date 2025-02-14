@@ -16,11 +16,12 @@ Vue.prototype.$axios = axios
 Vue.prototype.$ = $
 Vue.prototype.layer = layer
 Vue.config.productionTip = false
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: {App},
+  components: { App },
   template: '<App/>'
 })
 /* 路由发生变化修改页面title */

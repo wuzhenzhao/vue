@@ -94,8 +94,8 @@ export default {
           data = qs.stringify(data)
           return data
         }],
-        // url: '/api/authentication/form',
-        url: '/api/authentication/mobile',
+        url: '/api/authentication/form',
+        // url: '/api/authentication/mobile',
         data: {
           'username': this.username,
           'password': this.password,

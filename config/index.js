@@ -6,6 +6,7 @@ const path = require('path')
 
 module.exports = {
   dev: {
+
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
@@ -18,21 +19,18 @@ module.exports = {
         }
       },
       '/endpointOyzc': {
-        target: 'http://192.168.1.1:8765/', //需要代理的网址
+        target: 'http://192.168.1.1:8889/', //需要代理的网址
         changeOrigin: true
       },
-      '/api': {
-        target: 'http://192.168.1.1:8765/', //需要代理的网址
-        changeOrigin: true,
-        // pathRewrite: {
-        //   '^/api': ''
-        // }
+      '/wuzz': {
+        target: 'http://127.0.0.1:8889', //需要代理的网址
+        changeOrigin: true
       }
     },
 
     // Various Dev Server settings
-    host: '192.168.1.1', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    host: '127.0.0.1', // can be overwritten by process.env.HOST
+    port: 8765, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
